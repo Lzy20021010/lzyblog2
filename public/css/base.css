@@ -2,6 +2,10 @@ body{
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   background:#F6F6F3;
   color:#444;}
+img {
+  max-width:100%;
+  height:auto;
+}
 .navbar-default {
   background-color: #00868b;
   border-color: #168a8e;
