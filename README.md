@@ -1,5 +1,5 @@
-# lzyblog2
-一个基于Bootstrap开发的响应式Typecho主题
+# Lzy Technology 2 主题(lzyblog2)
+一个基于Bootstrap开发的响应式Typecho主题<br>
 主题特性：<br>
 1.响应式<br>
 2.支持社交网站链接<br>
