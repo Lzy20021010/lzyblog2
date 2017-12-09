@@ -1,0 +1,229 @@
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background:#F6F6F3;
+  color:#444;}
+.navbar-default {
+  background-color: #00868b;
+  border-color: #168a8e;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #168a8e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #168a8e;
+}
+.navbar-default .navbar-toggle {
+  border-color: #168a8e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #168a8e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #168a8e;
+  }
+}
+.blog.tag{
+  display: inline-block;
+}
+.blog-border{
+    border:1px solid #C0C0C0;
+    padding:20px; 
+    box-shadow: 5px 5px 5px 5px #888888;
+    overflow:hidden;
+}
+.blog-background{
+    background:#FFF; color:#000;
+}
+a.title:link{
+  color:#000000;
+  text-decoration:none;
+}
+a.title:visited{
+  color:#000000;
+  text-decoration:none;
+}
+a.title:hover{
+  color:#FF4500;
+  text-decoration:underline;
+}
+span.index-span{
+  font-size: 12px;
+}
+.post-content p{ 
+  text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/ 
+}
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+
+.blog-footer{
+  padding-top:50px;
+  padding-bottom:50px;
+  margin-top:100px;
+  color:#99979c;
+  text-align:center;
+  background-color:#2a2730
+}
+.blog-footer a{
+  color:#fff
+}
+.blog-footer-links{
+  padding-left:0;
+  margin-bottom:20px
+}
+.blog-footer-links li{
+  display:inline-block
+}
+.blog-footer-links li+li{
+  margin-left:15px
+}
+@media (min-width:768px){
+  .blog-footer{
+    text-align:left
+  }
+  .blog-footer p{
+    margin-bottom:0
+    }
+  }
+
+#comments {
+  padding: 1.5em 1.5em 2em;
+  margin: 15px auto;
+}
+
+#comments .page-navigator {
+  margin: 1rem 0 0
+}
+
+#comments a {
+  color: #aaa
+}
+
+#comments a:hover {
+  color: #00868B
+}
+
+.comment-list {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0
+}
+
+.avatar {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 1.4rem 1rem 0 0;
+  border-radius: 50%
+}
+
+.response {
+  color: #999;
+  font-weight: 400;
+}
+
+.comment-num {
+  color: #999;
+  font-weight: 400;
+}
+
+.comment-main {
+  overflow: hidden;
+  padding: 1rem 0;
+  border-bottom: 1px #e0e0e0
+}
+
+.comment-main p {
+  margin: 0
+}
+
+.comment-meta,.cancel-comment-reply {
+  margin-top: 1rem;
+  color: #aaa
+}
+
+.comment-meta .comment-reply {
+  float: right
+}
+
+.comment-reply {
+  float: right;
+  display: none
+}
+
+.comment-main:hover .comment-reply {
+  display: block
+}
+
+.comment-author {
+  padding: .1rem .25rem;
+  border-radius: .25rem;
+  background: #eee;
+}
+
+.comment-author:hover,.comment-author:hover a,.comment-author a:hover {
+  color: #00868B !important;
+  background: rgba(0,134,139,0.1)
+}
+
+.comment-time:before,.comment-reply a:before {
+  margin: 0 .5rem
+}
+
+.comment-parent>.comment-children {
+  margin-left: 1rem;
+  padding-left: 40px
+}
