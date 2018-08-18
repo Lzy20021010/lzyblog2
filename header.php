@@ -6,18 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title><?php $this->archiveTitle(array(
+    <title>
+      <?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
-        ), '', ' - '); ?><?php $this->options->title(); ?></title>
+        ), '', ' - '); ?>
+        <?php $this->options->title(); ?>
+        <?php if ($this->is('index')):echo " - ";$this->options->sub();endif; ?>
+    </title>
     <!-- Bootstrap -->
     <link href="<?php $this->options->themeUrl('public/css/bootstrap.min.css'); ?>" rel="stylesheet">
-    <link href="<?php $this->options->themeUrl('public/css/prism.css'); ?>" rel="stylesheet">    
-    <link href="<?php $this->options->themeUrl('public/css/base.css'); ?>" rel="stylesheet"> 
-    <?php if ($this->is('post')): ?>
-      <link rel="amphtml" href="<?php $this->permalink() ?>?amp=1">
+    <link href="<?php $this->options->themeUrl('public/css/base.css'); ?>" rel="stylesheet">
+    <?php if ($this->is('post') or $this->is('page')): ?>
+    <link href="<?php $this->options->themeUrl('public/css/dashang.css'); ?>" rel="stylesheet">
+    <!--Prism代码高亮插件,如需开启请去掉注释--> 
+    <!--<link href="<?php $this->options->themeUrl('public/css/prism.css'); ?>" rel="stylesheet">-->
+    <link rel="amphtml" href="<?php $this->permalink() ?>?amp=1">
     <?php endif; ?>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

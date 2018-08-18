@@ -4,8 +4,8 @@
  * 
  * @package Lzy Technology
  * @author Lzy20021010
- * @version 2.5.0
- * @link http://www.lzy20021010.xyz
+ * @version 2.5.5
+ * @link https://www.lzy20021010.com
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -29,6 +29,11 @@ $this->need('header.php');
 			</button>	
 			<p class="glyphicon glyphicon-bullhorn"> <?php echo $this->options->Notice();?></p>
 		</div>
+        <?php if($this->options->Ad1):?>
+        <div id="ad-index">
+            <?php echo $this->options->Ad1;?>
+        </div>
+        <?php endif;?>
 		<?php while($this->next()): ?>
 		<div class="blog-border blog-background">
  			<div class="blog-timg">

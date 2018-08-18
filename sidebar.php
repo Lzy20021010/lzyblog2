@@ -32,4 +32,10 @@
 			<a rel="tag" href="<?php $tags->permalink(); ?>"><?php $tags->name(); ?></a>
 			<?php endwhile; ?>
        	</div>
+       	<?php if($this->options->Ad3):?>
+        <div id="ad-sidebar">
+          	<h5 class="blog-line">广而告之</h5>
+          	<?php echo $this->options->Ad3;?>
+        	</div>
+    	<?php endif;?>
    	</div>	

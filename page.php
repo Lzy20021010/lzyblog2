@@ -78,8 +78,11 @@
                 <?php endif; ?>
               </ol>
               <div class="text-center">
-                <h4 class="text-title"><a  href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h4><hr/> 
+                <h4 class="text-title"><?php $this->title() ?></h4><hr/> 
                 <p><?php $this->content(); ?></p>   
+              </div>
+              <div id="yiyan">
+                <?php $yiyan = yiyan();echo $yiyan['hitokoto'];echo '&nbsp;&nbsp;——';echo $yiyan['from'];?>
               </div>
               <hr/>
               <?php $this->need('comments.php'); ?>   
